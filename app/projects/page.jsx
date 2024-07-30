@@ -2,7 +2,9 @@ import ProjectCard from "../components/ProjectCard";
 import { getProjects } from "../api/projects";
 import styles from "../styles/ProjectsPage.module.css";
 
-const ProjectsPage = ({ projects }) => {
+const ProjectsPage = async () => {
+  const projects = await getProjects(); // Pastikan fungsi getProjects mengembalikan promise
+
   return (
     <>
       <h3>Stuff I've Built So Far</h3>
@@ -14,13 +16,5 @@ const ProjectsPage = ({ projects }) => {
     </>
   );
 };
-
-// export async function getStaticProps() {
-//   const projects = getProjects();
-
-//   return {
-//     props: { title: 'Projects', projects },
-//   };
-// }
 
 export default ProjectsPage;

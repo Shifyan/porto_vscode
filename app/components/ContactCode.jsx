@@ -1,55 +1,31 @@
-import styles from '../styles/ContactCode.module.css';
+import styles from "../styles/ContactCode.module.css";
 
 const contactItems = [
   {
-    social: 'website',
-    link: 'nitinranganath.me',
-    href: 'https://nitinranganath.me',
+    social: "Instagram",
+    link: "@a.shif_yan",
+    href: "https://nitinranganath.me",
   },
   {
-    social: 'email',
-    link: 'nitinranganath@gmail.com',
-    href: 'mailto:nitinranganath@gmail.com',
+    social: "email",
+    link: "asifyan02@gmail.com",
+    href: "mailto:asifyan02@gmail.com",
   },
   {
-    social: 'github',
-    link: 'itsnitinr',
-    href: 'https://github.com/itsnitinr',
+    social: "github",
+    link: "Shifyannn",
+    href: "https://github.com/itsnitinr",
   },
   {
-    social: 'linkedin',
-    link: 'nitinranganath',
-    href: 'https://www.linkedin.com/in/nitinranganath/',
+    social: "linkedin",
+    link: "Shifyan Almustafid",
+    href: "https://www.linkedin.com/in/nitinranganath/",
   },
+
   {
-    social: 'twitter',
-    link: 'iamnitinr',
-    href: 'https://www.twitter.com/iamnitinr',
-  },
-  {
-    social: 'instagram',
-    link: 'iamnitinr',
-    href: 'https://www.instagram.com/iamnitinr',
-  },
-  {
-    social: 'polywork',
-    link: 'nitinranganath',
-    href: 'https://www.polywork.com/nitinranganath',
-  },
-  {
-    social: 'telegram',
-    link: 'iamnitinr',
-    href: 'https://t.me/iamnitinr',
-  },
-  {
-    social: 'codepen',
-    link: 'nitinranganath',
-    href: 'https://codepen.io/itsnitinr',
-  },
-  {
-    social: 'codesandbox',
-    link: 'itsnitinr',
-    href: 'https://codesandbox.io/u/itsnitinr',
+    social: "telegram",
+    link: "iamnitinr",
+    href: "https://t.me/iamnitinr",
   },
 ];
 
@@ -61,7 +37,7 @@ const ContactCode = () => {
       </p>
       {contactItems.slice(0, 8).map((item, index) => (
         <p className={styles.line} key={index}>
-          &nbsp;&nbsp;&nbsp;{item.social}:{' '}
+          &nbsp;&nbsp;&nbsp;{item.social}:{" "}
           <a href={item.href} target="_blank" rel="noopener">
             {item.link}
           </a>
@@ -70,7 +46,7 @@ const ContactCode = () => {
       ))}
       {contactItems.slice(8, contactItems.length).map((item, index) => (
         <p className={styles.line} key={index}>
-          &nbsp;&nbsp;{item.social}:{' '}
+          &nbsp;&nbsp;{item.social}:{" "}
           <a href={item.href} target="_blank" rel="noopener">
             {item.link}
           </a>
