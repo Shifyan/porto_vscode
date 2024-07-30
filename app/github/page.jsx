@@ -4,11 +4,8 @@ import RepoCard from "../components/RepoCard";
 import styles from "../styles/GithubPage.module.css";
 
 const theme = {
-  level0: "#161B22",
-  level1: "#0e4429",
-  level2: "#006d32",
-  level3: "#26a641",
-  level4: "#39d353",
+  dark: ["#161B22", "#0e4429", "#006d32", "#26a641", "#39d353"],
+  light: ["#ebedf0", "#c6e48b", "#7bc96f", "#239a3b", "#196127"],
 };
 
 const fetchGitHubData = async () => {
@@ -31,7 +28,6 @@ const fetchGitHubData = async () => {
     }
   );
   let repos = await repoRes.json();
-  console.log(repos);
   repos = repos
     .sort((a, b) => b.stargazers_count - a.stargazers_count)
     .slice(0, 6);

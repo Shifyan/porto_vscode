@@ -4,7 +4,7 @@ import "./styles/themes.css";
 import "./index.css";
 import Layout from "./components/Layout";
 import Head from "./components/Head";
-import ThemeProvider from "./components/ThemeProvider"; // Import komponen klien
+import ThemeProvider from "./components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Layout>
           <Head title={`Shifyan Almustafid`}></Head>
-          <ThemeProvider /> {/* Gunakan komponen klien di sini */}
+          <ThemeProvider />
           {children}
         </Layout>
       </body>

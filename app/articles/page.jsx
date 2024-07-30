@@ -12,9 +12,7 @@ const ArticlesPage = async () => {
   );
 
   const articles = await res.json();
-  if (articles.error) {
-    console.log(articles);
-  }
+
   return (
     <>
       {articles.error ? (

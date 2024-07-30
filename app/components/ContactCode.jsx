@@ -4,7 +4,7 @@ const contactItems = [
   {
     social: "Instagram",
     link: "@a.shif_yan",
-    href: "https://nitinranganath.me",
+    href: "https://www.instagram.com/a.shif_yan/",
   },
   {
     social: "email",
@@ -13,19 +13,19 @@ const contactItems = [
   },
   {
     social: "github",
-    link: "Shifyannn",
-    href: "https://github.com/itsnitinr",
+    link: "Shifyan",
+    href: "https://github.com/Shifyan",
   },
   {
     social: "linkedin",
     link: "Shifyan Almustafid",
-    href: "https://www.linkedin.com/in/nitinranganath/",
+    href: "https://id.linkedin.com/in/shifyan-almustafid/",
   },
 
   {
     social: "telegram",
-    link: "iamnitinr",
-    href: "https://t.me/iamnitinr",
+    link: "Shifyan Almustafid",
+    href: "https://t.me/asifyan01",
   },
 ];
 
