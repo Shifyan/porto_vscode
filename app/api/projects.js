@@ -1,10 +1,10 @@
 import data from "./projects.json";
 
-export const getProjects = () => {
+export const getProjects = function () {
   return data;
 };
 
-const getMyProject = (req, res) => {
+const getMyProject = function (req, res) {
   const projects = getProjects();
   res.json(projects);
 };
